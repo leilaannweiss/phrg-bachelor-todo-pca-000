@@ -1,4 +1,6 @@
-describe "bachelor" do 
+require "pry"
+
+describe "bachelor" do
 
   let(:data) { JSON.parse(File.read('spec/fixtures/contestants.json')) }
 
@@ -29,6 +31,15 @@ describe "bachelor" do
       expect(get_contestant_name(data, "Nonprofit director")).to eq("Dianna Martinez")
     end
   end
+
+
+
+
+
+
+
+
+
 
   describe "#count_contestants_by_hometown" do
     it "returns 2 when passed data and the string 'New York, New York'" do
